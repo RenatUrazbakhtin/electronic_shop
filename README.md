@@ -46,7 +46,7 @@ SECRET_KEY - ключ django
 Проверить тесты коммандой `coverage run --source='.' manage.py test`
 Узнать процент покрытия `coverage report`
 
-При проверке тестов значение закомментировать значение `HOST` в settings.py блок DATABASES.
+При проверке тестов необходимо закомментировать значение `HOST` в settings.py блок DATABASES.
 
 ## Документация по ссылкам
 Swagger - `swagger/`
