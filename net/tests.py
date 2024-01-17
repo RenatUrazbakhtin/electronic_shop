@@ -72,7 +72,7 @@ class OrganizationTestCase(APITestCase):
         )
 
         self.assertEquals(
-            response.json(), {"name": 'updated', 'creation_date': '2024-01-16', 'debt': None, 'organization_type': 'factory', 'supplier': None, "id": response.json()['id']}
+            response.json(), {"name": 'updated', 'creation_date': datetime.date.strftime(self.organization_factory.creation_date, '%Y-%m-%d'), 'debt': None, 'organization_type': 'factory', 'supplier': None, "id": self.organization_factory.pk}
         )
 
     def test_organization_list(self):
