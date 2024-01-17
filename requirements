@@ -1,0 +1,9 @@
+django
+djangorestframework
+python-dotenv
+psycopg2
+djangorestframework-simplejwt
+django-cors-headers
+django-filter
+drf-yasg
+coverage
